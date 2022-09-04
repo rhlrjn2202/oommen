@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en-us">
+	
+<!-- Mirrored from webtrendyio.github.io/iport/template/single-work-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 11:09:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>ManojKG Personal Portfolio | Single Work Page</title>
+		<meta name="description" content="Hello, my name is ManojKG and I am a Personal Portfolio!">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		
+		<!-- Remix Icons -->
+		<link rel="stylesheet" type="text/css" href="fonts/remixicon.css">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Aos Animate -->
+		<link rel="stylesheet" href="css/aos.css">
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="css/styles-dark.css">
+		
+		<script> 
+			let slideIndex = 1;
+			showSlides(slideIndex);	
+				
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("demo");
+			  let captionText = document.getElementById("caption");
+			  if (n === undefined) {n = ++slideIndex; }
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script> 
+
+		<style>  
+			* 
+			{
+			  box-sizing: border-box;
+			}
+
+			/* Position the image container (needed to position the left and right arrows) */
+			.container {
+			  position: relative;
+			}
+
+			/* Hide the images by default */
+			.mySlides {
+			  display: none;
+			}
+
+			/* Add a pointer when hovering over the thumbnail images */
+			.cursor {
+			  cursor: pointer;
+			}
+
+			/* Next & previous buttons */
+			.prev,
+			.next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 40%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -50px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 20px;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			  -webkit-user-select: none;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover,
+			.next:hover {
+			  background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+
+			/* Container for image text */
+			.caption-container {
+			  text-align: center;
+			  background-color: #222;
+			  padding: 2px 16px;
+			  color: white;
+			}
+
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Six columns side by side */
+			.column {
+			  float: left;
+			  width: 16.66%;
+			}
+
+			/* Add a transparency effect for thumnbail images */
+			.demo {
+			  opacity: 0.6;
+			}
+
+			.active,
+			.demo:hover {
+			  opacity: 1;
+			}
+		</style> 
+		
+	</head>
+	<body>
+		<!-- Menubar -->
+		<header class="menu-header">
+			<div class="container position-relative">
+				<nav class="navbar navbar-expand-lg position-absolute align-items-baseline">
+					<a class="navbar-brand d-lg-none" href="#">ManojKG</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link pl-lg-0" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="blog-dark.html">Lessons</a>
+							</li>
+							<!-- <li class="nav-item">
+								<a class="nav-link" href="single-blog-dark.html">Single Blog</a>
+							</li> -->
+							<li class="nav-item">
+								<a class="nav-link" href="work-dark.html">Events</a>
+							</li>
+							<!-- <li class="nav-item">
+								<a class="nav-link" href="single-work-dark.html">Single Work</a>
+							</li> -->
+						</ul>
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a href="mailto:kgmnj@hotmail.com" class="nav-link"><small><i class="ri-mail-open-line"></i> kgmnj@hotmail.com</small></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- End Menubar -->
+		
+		<main>
+
+			<!-- Page Header Section -->
+			<section class="single-work-header">
+				<div class="img-wrapper">
+					<img src="img/works/Header.jpg" alt="Work Title" class="img-fluid" />
+				</div>
+				<div class="single-work-title mt-3 pt-3">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-10 offset-sm-1 text-center">
+								<h1 class="display-4 font-weight-bold mb-2">Most Holy Place Camp</h1>
+								<div class="work-meta">
+									<span class="d-inline-block mr-2">
+										<i class="ri-center ri-calendar-2-line"></i> <small class="">30 May 2022</small>
+									</span class="d-inline-block mr-2">
+									<span class="d-inline-block mr-2">
+										<i class="ri-center ri-folder-2-line"></i> <small class="">CSI Kodithooki Retreat Center</small>
+									</span class="d-inline-block mr-2">
+									<span class="d-inline-block mr-2">
+										<i class="ri-center ri-user-voice-line"></i> <small class="">Fr Dr Manoj KG</small>
+									</span class="d-inline-block mr-2">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Page Header Section -->
+			
+			<!-- Single Work Section -->
+			<section class="single-work my-3 py-3 overflow-x-hidden">
+				<div class="container">	
+					<div class="row">
+						<div class="col-sm-10 offset-sm-1">
+							<p class="first-letter">A generation that prioritizes the value of divine, human, and nature... A generation living under the commission, control, and stewardship of the Spirit of God... A generation without boundaries of religion, caste and politics... A generation unencumbered by possessions, social status and family tradition... that is one of the main intention of this camp. </p>
+							<img src="img/works/Camp1/work-800x500-1.jpg" alt="Blog Image" class="img-fluid img-full my-2" />							
+							<blockquote class="blockquote">
+								<p class="mb-0">Three Days Children's Camp at CSI Kodithooki Retreat Center gracefully completed and the peace & joy through HolySpirit is very much evident on their faces...</p>
+							</blockquote>
+							<p class="mb-0">The feedback and testimony of the students who attended camp were exciting!</p>				
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Single Work Section -->
+
+
+			<!-- Images Section -->
+			<section class="hobbies my-1 py-1">
+			<!-- Container for the image gallery -->
+			<div class="container">	
+
+				 <div class="col-sm-10 offset-sm-1">
+				 	  <p> Photos </p>	
+				 </div>	
+
+			  <!-- Full-width images with number text -->
+			  <div class="mySlides" style="display: block;">
+			      <center><img src="img/works/Camp1/Manoj1.jpg" style="width:80%"></center>
+			  </div>
+
+			  <div class="mySlides">
+			      <center><img src="img/works/Camp1/Manoj2.jpg" style="width:80%"></center>
+			  </div>
+
+			  <div class="mySlides">
+			      <center><img src="img/works/Camp1/Manoj3.jpg" style="width:80%"></center>
+			  </div>
+
+			 
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>	
+			</div>
+			</section>
+			<!-- End Images Section -->
+
+
+			<!-- Video Section -->
+			<section class="my-3 py-3">
+			<!-- Container for the Video gallery -->
+			<div class="container">	
+				 <div class="col-sm-10 offset-sm-1">
+				 	  <p> Videos </p>	
+				 </div>				 
+			     <center>
+			     	<iframe allowFullScreen="allowFullScreen" src="http://www.youtube.com/embed/VUl0HSdGSjo?rel=1" seamless/></iframe>
+			     	<iframe allowFullScreen="allowFullScreen" src="http://www.youtube.com/embed/WR0bVJVg-z4?rel=1" seamless/></iframe>
+			     </center>
+			</div>
+			</section>
+			<!-- End Video Section -->						
+
+			<!-- Contact Section -->
+			<section class="contacts mt-3 pb-3">
+					<div class="container">
+						<div class="row" data-aos="fade-up">
+							<div class="col-sm-12 text-center">
+								<span class="lead font-weight-normal">Need to know more?</span>
+								<h2 class="display-5 font-weight-bold mb-5">Contact Me</h2>
+							</div>
+							<div class="col-sm-12 text-center">
+								<div class="mb-2">
+									<i class="ri-map-pin-line"></i>
+									<address class="d-inline-block">The Kingdom Ministry, Kottukal, Trivandrum, Kerala, India</address>
+								</div>
+								<div class="mb-2">
+									<i class="ri-phone-line"></i>
+									<a href="tel:+919947968898">+91 99 479 688 98</a>
+								</div>
+								<div class="mb-2">
+									<i class="ri-computer-line"></i>
+									<span>kgmnj@hotmail.com</span>
+								</div>
+							</div>
+							<div class="col-sm-12 text-center cp">
+								<strong class="d-block">© Copyright 2020 | ManojKG Portfolio | All Rights Reserved</strong>
+								<img src="img/signature.png" alt="My Signature" title="Signature" class="signature mt-2">
+							</div>
+						</div>
+					</div>
+			</section>
+			<!-- End Contact Section -->
+		</main>
+		
+		<!-- JQuery -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+
+		<!-- Custom Cursor Script -->
+		<script src="js/custom-cursor.js"></script>
+
+		<!-- Bootstrap -->
+		<script src="js/bootstrap.min.js"></script>
+
+		<!-- Aos Animate -->
+		<script src="js/aos.js"></script>
+		
+		<!-- Main JavaScript -->
+		<script src="js/script.js"></script>
+	</body>
+
+<!-- Mirrored from webtrendyio.github.io/iport/template/single-work-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 02 Aug 2022 11:09:41 GMT -->
+</html>
